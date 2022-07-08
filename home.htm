@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>Home</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+    <header class="barra_cima">
+        <h1 class="Titulo"><a href="https://www.senaimg.com.br/" target="_blank">Senai</h1></a>
+        
+        <nav class="barra_opcoes">
+            <a class="barra_opcoes_pag" href="#">Home</a>
+            <a class="barra_opcoes_pag" href="#">Contato</a>
+            <a class="barra_opcoes_pag" href="#">Localidades</a>
+        </nav>
+
+    </header>
+
+    <div class="conteudo">
+        <h2 class="conteudo_tit">Existem inúmeras instalações do Senai espalhadas pelo Brasil</h2>
+        <h3 class="conteudo_sub">Conheça algumas!</h3>
+    </div>
+
+    <div class="imagem">
+
+        <div class="imagem_1">
+            <a href="https://piracicabacentro.sp.senai.br/" target="_blank"><img class="img_1" src="/CSS/Senai_Pira.jpg"></a>
+        </div>
+        
+        <div class="imagem_2">
+            <a href="https://www7.fiemg.com.br/senai/mais-senai/na-sua-cidade/senai-itajuba-cfp-aureliano-chaves" target="_blank"><img class="img_2" src="/CSS/Senai_Itaj.jpg"></a> 
+        </div>
+    </div>
+    
+    <div>
+        <img class="imagem_des" src="/CSS/pac.png">
+        <div class="imagem_des_txt">
+            <h3 class="imagem_des_txt_tit">Você conhece o Pac Man?</h3>
+            <p class="imagem_des_txt_desc">O jogo foi lançado em 22 de maio de 1980. A ideia do desenho original ocorreu durante um jantar com amigos, e deve-se a uma pizza sem uma fatia, que fazia lembrar uma boca aberta; assim tem origem uma personagem inspirada em Paku, uma personagem popular no Japão conhecido pelo seu apetite.
+                No jogo os jogadores controlam Pac-Man, com o objectivo de comer todas as bolas (ou pastilhas) que se encontram espalhadas num labirinto, enquanto evitam quatro fantasmas (os Galaxians), 'blinky', 'pinky', 'inky' e 'clyde', que escapam de uma prisão. Em cada canto da área de jogo, estão pastilhas maiores que permitem ao pac-man caçar os fantasmas, em vez de ser caçado, durante um curto período de tempo.
+                O jogo foi um dos mais populares, sendo o primeiro jogo de vídeo que originou um merchandising massivo, com camisetas, casacos, calças, copos de café, peluches, lençóis, cereais, jogos-de-tabuleiro, livros, e toalhas.
+                Os fantasmas Blinky, Pinky, Inky e Clyde são os inimigos/vilões do jogo. Apesar da natureza aparentemente aleatória, seus movimentos são estritamente determinísticos, que os players usaram para sua vantagem. Em uma entrevista, o criador Toru Iwatani afirmou que ele havia projetado cada inimigo com sua própria personalidade distinta, a fim de impedir que o jogo se tornasse impossivelmente difícil ou chato de jogar.[6] Mais recentemente, Iwatani descreveu o comportamento do inimigo com mais detalhes na 2011
+            </p>
+        </div>
+    </div>
+
+    <div class="login">
+        <h1 class="login_titulo">Login</h1>
+        <input  class="login_nome" type="text" placeholder="Nome: ">
+        <input class="login_senha" type="password" placeholder="Senha: ">
+        <button class="login_botao" onclick="logar(); return false">Entrar</button>
+    </div>
+
+    <object class="video" width="425" height="344" data="CSS/video.mp4"></object>
+
+    <script>
+
+        function logar(){
+
+            var login = document.getElementsByClassName("login_nome").value;
+            var senha = document.getElementsByClassName("login_senha").value;
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso');
+                location.href = "home2.htm";
+            }
+            else{
+                alert("Senha errada!")
+            }
+
+        }
+
+    </script>
+
+    <footer class="rodape">
+        <p>&#169 Copyright</p>
+    </footer>
+
+</body>
+</html>
